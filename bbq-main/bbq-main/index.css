@@ -1,0 +1,156 @@
+
+* {
+    box-sizing: border-box;
+  }
+body{
+    margin:0;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #404040;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    
+    color: white;
+    /* text-align: center; */
+}
+h1+p{
+    text-transform: uppercase;
+    color: #f18119;
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+
+h2{
+    font-size: 1.3rem;
+    margin:0;
+
+}
+.top-text{
+    color: #f18119;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+    max-width: 500px;
+    margin: 0 auto;
+    /* background-image: url(/image/grill.jpeg); */
+    background-color:  #404040;
+    margin-bottom: 2em;
+}
+.top-text{
+    order:-1;
+    margin: 0;
+    font-size:0.50rem;
+    letter-spacing: 1px;
+    border-top:5px solid  #f18119;
+    display: inline-block;
+    font-weight: 900;
+    padding-top: 2px;
+    font-size: 0.625rem;
+    
+    
+}
+.top{
+    order:-1;
+}
+h2+p{
+    text-transform: uppercase;
+    color: #f18119;
+    font-weight: 900;
+    margin: 0;
+    
+}
+.intro > *,
+.main-content >*{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+input,.btn{
+    width: 60%;
+border-radius:5px;
+margin: 0.50em;
+text-align: center;
+padding: 0.30em;
+
+
+}
+
+.btn{          
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f18119;
+    font-weight: 700;
+    width: 70%;
+    border: none;
+   letter-spacing: 1px;
+   font-size: 0.75rem;
+   padding: 0.75em 0.75em;
+}
+.btn-primary{
+    background-image: linear-gradient(to left, #ff713b, #ffa51d);
+    transform: scale(1);
+    transition: transform 250ms;
+}
+.btn-primary:hover,
+  .btn-primary:focus {
+    transform: scale(1.1);
+  }
+input:focus{
+    transform:scale(1.1);
+  }
+input{
+    font-family: inherit;
+    text-align: inherit;
+    border:1px solid  #404040;
+    width: 70%;
+    padding: 0.25em 0.75em;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+    
+  }
+@media (min-width:500px){
+    body{
+        display: flex;
+        font-size: 1.125rem;
+        max-width: 100%;
+        
+    }
+    .intro{
+        min-height: 100vh;
+        margin: 0 ;
+        min-width:50%;
+       
+    }
+    .main-content{
+         max-width: 50%;
+         
+         margin: auto auto;
+         padding: 1em
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h2,
+    h1+p{
+        font-size: 1.75rem;
+    
+    }
+    
+
+
+}
